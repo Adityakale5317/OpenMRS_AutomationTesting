@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-01T19:39:37 IST" name="Suite" finished-at="2023-11-01T19:39:45 IST" duration-ms="7870">
+    <groups>
+    </groups>
+    <test started-at="2023-11-01T19:39:37 IST" name="Test" finished-at="2023-11-01T19:39:45 IST" duration-ms="7870">
+      <class name="qa.test.TestCase1">
+        <test-method is-config="true" signature="beforMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.test.TestCase1@71809907]" started-at="2023-11-01T19:39:37 IST" name="beforMethod" finished-at="2023-11-01T19:39:40 IST" duration-ms="3669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void qa.test.TestCase1.sampleMethodforEnteringCred()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method signature="sampleMethodforEnteringCred()[pri:0, instance:qa.test.TestCase1@71809907]" started-at="2023-11-01T19:39:40 IST" name="sampleMethodforEnteringCred" finished-at="2023-11-01T19:39:45 IST" duration-ms="4160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sampleMethodforEnteringCred -->
+      </class> <!-- qa.test.TestCase1 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
