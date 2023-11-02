@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-01T19:39:37 IST" name="Suite" finished-at="2023-11-01T19:39:45 IST" duration-ms="7870">
+  <suite started-at="2023-11-02T20:52:20 IST" name="Suite" finished-at="2023-11-02T20:52:51 IST" duration-ms="31652">
     <groups>
     </groups>
-    <test started-at="2023-11-01T19:39:37 IST" name="Test" finished-at="2023-11-01T19:39:45 IST" duration-ms="7870">
-      <class name="qa.test.TestCase1">
-        <test-method is-config="true" signature="beforMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.test.TestCase1@71809907]" started-at="2023-11-01T19:39:37 IST" name="beforMethod" finished-at="2023-11-01T19:39:40 IST" duration-ms="3669" status="PASS">
+    <test started-at="2023-11-02T20:52:20 IST" name="Test" finished-at="2023-11-02T20:52:51 IST" duration-ms="31652">
+      <class name="qa.test.TestCase3">
+        <test-method is-config="true" signature="beforMethod(java.lang.String,java.lang.reflect.Method)[pri:0, instance:qa.test.TestCase3@7c729a55]" started-at="2023-11-02T20:52:20 IST" name="beforMethod" finished-at="2023-11-02T20:52:27 IST" duration-ms="6715" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,18 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[public void qa.test.TestCase1.sampleMethodforEnteringCred()]]>
+                <![CDATA[public void qa.test.TestCase3.verifyRegisterPatient() throws java.lang.InterruptedException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforMethod -->
-        <test-method signature="sampleMethodforEnteringCred()[pri:0, instance:qa.test.TestCase1@71809907]" started-at="2023-11-01T19:39:40 IST" name="sampleMethodforEnteringCred" finished-at="2023-11-01T19:39:45 IST" duration-ms="4160" status="PASS">
+        <test-method signature="verifyRegisterPatient()[pri:0, instance:qa.test.TestCase3@7c729a55]" started-at="2023-11-02T20:52:27 IST" name="verifyRegisterPatient" finished-at="2023-11-02T20:52:51 IST" duration-ms="24507" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sampleMethodforEnteringCred -->
-      </class> <!-- qa.test.TestCase1 -->
+        </test-method> <!-- verifyRegisterPatient -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:qa.test.TestCase3@7c729a55]" started-at="2023-11-02T20:52:51 IST" name="afterMethod" finished-at="2023-11-02T20:52:51 IST" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- qa.test.TestCase3 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

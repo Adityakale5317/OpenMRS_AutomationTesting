@@ -5,6 +5,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -26,11 +27,17 @@ public class BaseTest {
 		driver.manage().window().maximize();
 		driver.get(Constant.url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		
 	}
 	
+	@AfterMethod
+	public void afterMethod() {
+		driver.quit();
+	}
 	public void setupDriver(String browser) {
 		if(browser.equals("chrome")) {
 			 driver = new ChromeDriver();
 		}
 	}
+
 }

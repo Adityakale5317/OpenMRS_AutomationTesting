@@ -4,12 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="qa.test.TestCase1">
+      <class name="qa.test.TestCase3">
         <methods>
+          <include name="afterMethod"/>
           <include name="beforMethod"/>
-          <include name="sampleMethodforEnteringCred"/>
+          <include name="verifyRegisterPatient"/>
         </methods>
-      </class> <!-- qa.test.TestCase1 -->
+      </class> <!-- qa.test.TestCase3 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

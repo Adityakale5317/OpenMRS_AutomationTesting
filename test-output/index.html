@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="qa.test.TestCase1" class="method navigator-link" hash-for-method="sampleMethodforEnteringCred">sampleMethodforEnteringCred</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="qa.test.TestCase3" class="method navigator-link" hash-for-method="verifyRegisterPatient">verifyRegisterPatient</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -122,14 +122,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">qa.test.TestCase1</span>
+              <span class="class-name">qa.test.TestCase3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sampleMethodforEnteringCred">
-                  </a> <!-- sampleMethodforEnteringCred -->
-                  <span class="method-name">sampleMethodforEnteringCred</span>
+                  <a name="verifyRegisterPatient">
+                  </a> <!-- verifyRegisterPatient -->
+                  <span class="method-name">verifyRegisterPatient</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -147,7 +147,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;qa.test.TestCase1&quot;/&gt;
+      &lt;class name=&quot;qa.test.TestCase3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -189,14 +189,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sampleMethodforEnteringCred')
-data.setCell(0, 2, 'qa.test.TestCase1')
-data.setCell(0, 3, 4160);
+data.setCell(0, 1, 'verifyRegisterPatient')
+data.setCell(0, 2, 'qa.test.TestCase3')
+data.setCell(0, 3, 24507);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -222,15 +222,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">qa.test.TestCase1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">qa.test.TestCase3</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforMethod(chrome, public void qa.test.TestCase1.sampleMethodforEnteringCred())</span>
+                <span class="method-name">beforMethod(chrome, public void qa.test.TestCase3.verifyRegisterPatient() throws java.lang.InterruptedException)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">sampleMethodforEnteringCred</span>
-                <span class="method-start">3672 ms</span>
+                <span class="method-name">verifyRegisterPatient</span>
+                <span class="method-start">6717 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">31232 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
