@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="qa.test.TestCase3">
+      <class name="qa.test.TestCase4">
         <methods>
-          <include name="verifyRegisterPatient"/>
+          <include name="afterMethod"/>
+          <include name="beforMethod"/>
+          <include name="verifyUsercreatingNewservicesinManageServicesType"/>
         </methods>
-      </class> <!-- qa.test.TestCase3 -->
+      </class> <!-- qa.test.TestCase4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

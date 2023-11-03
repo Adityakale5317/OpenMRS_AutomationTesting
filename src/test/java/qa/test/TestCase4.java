@@ -6,12 +6,11 @@ import base.BaseTest;
 import pageEvent.LoginPage;
 import utils.Element_Fetch;
 
-public class TestCase2 extends BaseTest {
+public class TestCase4 extends BaseTest{
 Element_Fetch ele = new Element_Fetch();
 LoginPage loginPage = new LoginPage();
   @Test
-  public void verifyUserfindPatientRecord() throws InterruptedException {
-	 
-	loginPage.findPatientRecord();
+  public void verifyUsercreatingNewservicesinManageServicesType() throws InterruptedException {
+	  loginPage.createNewservicesManageServicetype();
   }
 }

@@ -6,7 +6,7 @@ public interface LoginPageElements {
 	String UserName = "//input[@id = 'username']";
 	String PasswordField = "//input[@id = 'password']";
 	String InpatientWard = "//li[text() = 'Inpatient Ward']";
-	String IsolationWard = "//li[text() = 'Isolation WardIsolation Ward']";
+	String IsolationWard = "//li[@id='Isolation Ward']";
 	String Laboratory = "//li[text() = 'Laboratory']";
 	String LoginTitle = "//div/h4[contains(text(),  'Logged in as Super User (admin) at Inpatient Ward.')]";
 	String FindpatientRecord = "//a/i[@class='icon-search']";
@@ -27,7 +27,15 @@ public interface LoginPageElements {
 	String PersonName = "//input[@placeholder='Person Name']";
 	String ConfirmButton = "//input[@id = 'submit']";
 	String verifyPatinetID = "//div[@class='float-sm-right']/span";
-	
+	String AppoinmentSchedulerIcon = "//a[@id='appointmentschedulingui-homeAppLink-appointmentschedulingui-homeAppLink-extension']";
+	String ManageServicesIcon = "//a[@id='appointmentschedulingui-manageAppointmentTypes-app']";
+	String NewServiceTypebutton = "//button[@class='confirm appointment-type-label right']";
+	String NameField = "//input[@id='name-field']";
+	String DurationField = "//input[@id='duration-field']";
+	String DescriptionField = "//textarea[@id='description-field']";
+	String SaveServiceType = "//input[@id='save-button']";
+	String NoMatchingRecord = "//td[text()='No matching records found']";
+	String MandotryField = "//span[@id = 'fr1155']";
 	
 	
 }
