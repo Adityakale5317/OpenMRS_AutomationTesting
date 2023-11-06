@@ -13,7 +13,7 @@ import base.BaseTest;
 
 public class SuiteListener implements ITestListener{
 
-	public void captureScreenshot(ITestResult result) {
+	public void onTestfaulure(ITestResult result) {
 		try {
 		String filename = System.getProperty("user.dir")+File.separator+"screenshots"+File.separator+result.getMethod().getMethodName();
 		File f1 = ((TakesScreenshot)BaseTest.driver).getScreenshotAs(OutputType.FILE);

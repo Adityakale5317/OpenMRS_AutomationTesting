@@ -2,10 +2,11 @@ package pageEvent;
 
 import org.testng.Assert;
 
+import base.BaseTest;
 import pageObject.LoginPageElements;
 import utils.Element_Fetch;
 
-public class LoginPage {
+public class LoginPage{
 
 	Element_Fetch ele = new Element_Fetch();
 
@@ -165,4 +166,121 @@ public class LoginPage {
 		}
 		
 	}
+	
+	public void createNewservicesManageServicetypeinIsolation() throws InterruptedException {
+		enterCredentialsIsolation();
+		ele.getElement("XPATH", LoginPageElements.AppoinmentSchedulerIcon).click();
+		ele.getElement("XPATH", LoginPageElements.ManageServicesIcon).click();
+		ele.getElement("XPATH", LoginPageElements.NewServiceTypebutton).click();
+		ele.getElement("XPATH", LoginPageElements.NameField).clear();
+		ele.getElement("XPATH", LoginPageElements.NameField).sendKeys("Sergio Ramos");
+		Thread.sleep(3000);
+		ele.getElement("XPATH", LoginPageElements.DurationField).sendKeys("90");
+		ele.getElement("XPATH", LoginPageElements.DescriptionField).sendKeys("Surgical department");
+		ele.getElement("XPATH", LoginPageElements.SaveServiceType).click();
+		Thread.sleep(3000);
+
+	}
+	
+	public void findAppointmenetsInIsolation() throws InterruptedException {
+		enterCredentialsIsolation();
+		ele.getElement("XPATH", LoginPageElements.AppoinmentSchedulerIcon).click();
+		ele.getElement("XPATH", LoginPageElements.AppointmentRequest).click();
+		String PatientName = ele.getElement("XPATH", LoginPageElements.PatientName).getText();
+		ele.getElement("XPATH", LoginPageElements.ReturnAppointScheduling).click();
+		ele.getElement("XPATH", LoginPageElements.AppoinmentSchedulerIcon).click();
+		ele.getElement("XPATH", LoginPageElements.ManageAppointmenet).click();
+		ele.getElement("XPATH", LoginPageElements.SearchPatient).sendKeys(PatientName);
+		Thread.sleep(3000);
+		ele.getElement("XPATH", LoginPageElements.ClickOnFirstElementManageAppointment).click();
+		Thread.sleep(3000);
+		
+		
+		System.out.print(PatientName);
+		/*
+		 * 
+		 * ele.getElement("XPATH",
+		 * LoginPageElements.SearchPatient).sendKeys("Shaiful Family");
+		 */
+	}
+	
+	//Laboratory
+	
+		public void findPatientRecordLaboratory() throws InterruptedException {
+			enterCredentialsLaboratory();
+			Thread.sleep(3000);
+			ele.getElement("XPATH", LoginPageElements.FindpatientRecord).click();
+			ele.getElement("XPATH", LoginPageElements.SearchbyID).sendKeys("Muhammad Edwin Pratomo");
+			Thread.sleep(3000);
+			ele.getElement("XPATH", LoginPageElements.FirsttableElemnt).click();
+		}
+	
+		public void registerPatientLaboratory() throws InterruptedException {
+			enterCredentialsLaboratory();
+			ele.getElement("XPATH", LoginPageElements.ClickRegisterPatient).click();
+			ele.getElement("XPATH", LoginPageElements.GivenName).sendKeys("Neymar");
+			ele.getElement("XPATH", LoginPageElements.MiddleName).sendKeys("Sr Neymar");
+			ele.getElement("XPATH", LoginPageElements.LastName).sendKeys("da Silva Santos");
+			ele.getElement("XPATH", LoginPageElements.NextButton).click();
+
+			ele.getElement("XPATH", LoginPageElements.GenderSelect).click();
+			ele.getElement("XPATH", LoginPageElements.NextButton).click();
+			Thread.sleep(3000);
+			ele.getElement("XPATH", LoginPageElements.BirthdateDay).sendKeys("5");
+			ele.getElement("XPATH", LoginPageElements.BirthdateMonth).click();
+			ele.getElement("XPATH", LoginPageElements.BirthdateYear).sendKeys("1990");
+			ele.getElement("XPATH", LoginPageElements.NextButton).click();
+
+			ele.getElement("XPATH", LoginPageElements.AddressLocator).sendKeys("Sao Paulo Brazil");
+			;
+			ele.getElement("XPATH", LoginPageElements.NextButton).click();
+			Thread.sleep(3000);
+			ele.getElement("XPATH", LoginPageElements.PhoneNumber).sendKeys("111111111");
+			ele.getElement("XPATH", LoginPageElements.NextButton).click();
+			Thread.sleep(3000);
+
+			ele.getElement("XPATH", LoginPageElements.PatientRelation).click();
+			ele.getElement("XPATH", LoginPageElements.PersonName).sendKeys("Dyabala");
+			ele.getElement("XPATH", LoginPageElements.NextButton).click();
+
+			ele.getElement("XPATH", LoginPageElements.ConfirmButton).click();
+			Thread.sleep(3000);
+			verifyPatinetIDGenerated();
+		}
+		public void createNewservicesManageServicetypeinLaboratory() throws InterruptedException {
+			enterCredentialsLaboratory();
+			ele.getElement("XPATH", LoginPageElements.AppoinmentSchedulerIcon).click();
+			ele.getElement("XPATH", LoginPageElements.ManageServicesIcon).click();
+			ele.getElement("XPATH", LoginPageElements.NewServiceTypebutton).click();
+			ele.getElement("XPATH", LoginPageElements.NameField).clear();
+			ele.getElement("XPATH", LoginPageElements.NameField).sendKeys("Sergio Ramos");
+			Thread.sleep(3000);
+			ele.getElement("XPATH", LoginPageElements.DurationField).sendKeys("90");
+			ele.getElement("XPATH", LoginPageElements.DescriptionField).sendKeys("Surgical department");
+			ele.getElement("XPATH", LoginPageElements.SaveServiceType).click();
+			Thread.sleep(3000);
+
+		}
+		
+		public void findAppointmenetsInLaboratory() throws InterruptedException {
+			enterCredentialsLaboratory();
+			ele.getElement("XPATH", LoginPageElements.AppoinmentSchedulerIcon).click();
+			ele.getElement("XPATH", LoginPageElements.AppointmentRequest).click();
+			if(ele.getElement("XPATH", LoginPageElements.noAppointmentLocator).isDisplayed() == true) {
+				System.out.println("No Appointments are present");
+				
+			}
+			else{String PatientName = ele.getElement("XPATH", LoginPageElements.PatientName).getText();
+			ele.getElement("XPATH", LoginPageElements.ReturnAppointScheduling).click();
+			ele.getElement("XPATH", LoginPageElements.AppoinmentSchedulerIcon).click();
+			ele.getElement("XPATH", LoginPageElements.ManageAppointmenet).click();
+			ele.getElement("XPATH", LoginPageElements.SearchPatient).sendKeys(PatientName);
+			Thread.sleep(3000);
+			ele.getElement("XPATH", LoginPageElements.ClickOnFirstElementManageAppointment).click();
+			Thread.sleep(3000);
+			
+			
+			System.out.print(PatientName);
+			}
+		}
 }

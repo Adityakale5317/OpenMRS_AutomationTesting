@@ -36,6 +36,13 @@ public interface LoginPageElements {
 	String SaveServiceType = "//input[@id='save-button']";
 	String NoMatchingRecord = "//td[text()='No matching records found']";
 	String MandotryField = "//span[@id = 'fr1155']";
+	String ManageAppointmenet = "//a[@id='appointmentschedulingui-manageAppointments-app']";
+	String SearchPatient = "//input[@id='patient-search']";
+	String AppointmentRequest = " //a[@id='appointmentschedulingui-appointmentRequests-app']";
+	String PatientName = "//tr/td[1]";
+	String ReturnAppointScheduling = "/html/body/header/nav/div[1]/a";
+	String ClickOnFirstElementManageAppointment = "//*[@id=\"patient-search-results-table\"]/tbody/tr/td[1]";
+	String noAppointmentLocator = "//span/p[contains(text(),'No appointment requests')]";
 	
 	
 }
