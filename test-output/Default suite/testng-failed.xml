@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="qa.test.TestCase13">
+      <class name="qa.test.TestCase16">
         <methods>
+          <include name="beforeTestMethod"/>
           <include name="afterMethod"/>
           <include name="beforMethod"/>
-          <include name="verifyUserfindManageApointmentsinLaboratory"/>
+          <include name="registerPatientUsingExcelData"/>
+          <include name="aftertest"/>
         </methods>
-      </class> <!-- qa.test.TestCase13 -->
+      </class> <!-- qa.test.TestCase16 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -43,6 +43,14 @@ public interface LoginPageElements {
 	String ReturnAppointScheduling = "/html/body/header/nav/div[1]/a";
 	String ClickOnFirstElementManageAppointment = "//*[@id=\"patient-search-results-table\"]/tbody/tr/td[1]";
 	String noAppointmentLocator = "//span/p[contains(text(),'No appointment requests')]";
-	
-	
+	String NameCaptureVitals = "//*[@id=\"patient-search-results-table\"]/tbody/tr[1]/td[2]";
+	String IdentifierCaptureVitals = "//*[@id=\"patient-search-results-table\"]/tbody/tr[1]/td[1]/text()";
+	String CaptureVitalIcon = "//i[@class='icon-vitals']";
+	String NameInVitalCaptureBox = "//input[@id='patient-search']";
+	String FirstnameInVital = "//*[@id=\"patient-search-results-table\"]/tbody/tr/td[2]";
+ 	String PatientNameInVital = "//ul[@id='breadcrumbs']/li[3]";
+ 	String IdinVital = "tbody tr:nth-child(1) td:nth-child(1)";
+ 	String RightButtonVitalrecord = "//button[@class='confirm big right']";
+ 	String LeftButtonVitalRecords = "//button[@class='cancel big']";
+ 	
 }
